@@ -755,6 +755,7 @@ app.get('/dashboard/tickets', (c) => c.html(getDashboardHTML('tickets')))
 app.get('/dashboard/knowledge-base', (c) => c.html(getDashboardHTML('knowledge-base')))
 app.get('/dashboard/analytics', (c) => c.html(getDashboardHTML('analytics')))
 app.get('/dashboard/settings', (c) => c.html(getDashboardHTML('settings')))
+app.get('/pricing', (c) => c.redirect('/#pricing'))
 app.get('/widget', (c) => c.html(getWidgetDemoHTML()))
 
 function getAuthStyles(): string {
